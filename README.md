@@ -7,26 +7,26 @@ The playbook will be created with multiple roles that should run an apache serve
 
 ## Installation
 You can build and run container from CLI or IDE
-> Below lays out instructions on how to build/run from both
+> Below are instructions on how to build/run from both
 
 ### From CLI
 The only time your working folder should be considered is when building your image.
 <br />Since dockerfile sits inside of a .devcontainer please be sure to change working directory into .devcontainer.
 <br />The commands assume that you are in .devcontainer of the APACHE-ANSIBLE project
-> Please note that the term 'the user' is referencing you as the developer running the commands
+>The term 'the user' is referencing you as the developer running the commands
 
 ### Building the Image
 `docker build -t <image-tag-name> -f ansible .` 
-> **NOTE:** `<image-tag-name>` is arbitrary but best practice is to follow semantic versioning format: image-tag-name:0.0.1
+>`<image-tag-name>` is arbitrary but best practice is to follow semantic versioning format: image-tag-name:0.0.1
 
 ### Running the Container
 `docker run -dit --name <containerName> <imageTagName>`
-> **NOTE:** `<containerName>` is arbitrary; it is to better help the user remember the container name which will be needed later
-> **NOTE:** `<imageTagName>` is the tag name the user assigned the image in the Build stage
+>`<containerName>` is arbitrary; it is to better help the user remember the container name which will be needed later
+>`<imageTagName>` is the tag name the user assigned the image in the Build stage
 
 ### Execute into container cli
 `docker exec -it <containerName> ash`
-> **NOTE:** `<containerName>` is name the user assigned in running the container
+>`<containerName>` is name the user assigned in running the container
 
 ## Project status
 - Project is a work in progress and currently can build an image and run the container
@@ -36,19 +36,21 @@ The only time your working folder should be considered is when building your ima
 
 ## From IDE
 The project was built using VS Code IDE and the following instructions are based on VS Code IDE
-Please feel free to add other IDE as needed otherwise engineer will update IDE instructions periodically
-Please note that the term 'the user' is referencing you as the developer running the commands
+<br />Please feel free to add other IDE as needed otherwise engineer will update IDE instructions periodically
+>The term 'the user' is referencing you as the developer running the commands
 
 ### VS Code
-Open Command Palette
->- **Toolbar:** `View/Command Palette`
->- **Shortcut:** `ctrl+shift+p`
-<br />Search:
->- Dev Containers: Open Folder in Container...
+*Open Command Palette:*
+<br />**Toolbar:**
+>`View/Command Palette`
+<br />**Shortcut:**
+>`ctrl+shift+p`
+<br />*Search:*
+>Dev Containers: Open Folder in Container...
 
 This should reopen VS Code from container view, meaning you won't have to you the docker exec command from earlier.
 <br />Simply open a new terminal to be able to run commands from inside your container (similarly to being in a virtual machine)
-<br />Open New Terminal
+<br />*Open New Terminal*
 >**Toolbar:** `Terminal/New Terminal`
 >**Shortcut:** `ctrl+shift+`` (backtick '`' is located next to number 1 key on keyboard)
 
