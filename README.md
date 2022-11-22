@@ -43,12 +43,11 @@ The project was built using VS Code IDE and the following instructions are based
 ### VS Code
 *Open Command Palette:*
 <br />**Toolbar:**
->`View/Command Palette`
-<br />
+`View/Command Palette`
 <br />**Shortcut:**
->`ctrl+shift+p`
+`ctrl+shift+p`
 <br />*Search:*
->Dev Containers: Open Folder in Container...
+`Dev Containers: Open Folder in Container...`
 
 This should reopen VS Code from container view, meaning you won't have to you the docker exec command from earlier.
 <br />Simply open a new terminal to be able to run commands from inside your container (similarly to being in a virtual machine)
