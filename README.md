@@ -22,11 +22,12 @@ The only time your working folder should be considered is when building your ima
 ### Running the Container
 `docker run -dit --name <containerName> <imageTagName>`
 >`<containerName>` is arbitrary; it is to better help the user remember the container name which will be needed later
+>
 >`<imageTagName>` is the tag name the user assigned the image in the Build stage
 
 ### Execute into container cli
 `docker exec -it <containerName> ash`
->`<containerName>` is name the user assigned in running the container
+>`<containerName>` is container name the user assigned in running the container
 
 ## Project status
 - Project is a work in progress and currently can build an image and run the container
@@ -43,6 +44,7 @@ The project was built using VS Code IDE and the following instructions are based
 *Open Command Palette:*
 <br />**Toolbar:**
 >`View/Command Palette`
+<br />
 <br />**Shortcut:**
 >`ctrl+shift+p`
 <br />*Search:*
