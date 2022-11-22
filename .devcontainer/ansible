@@ -1,0 +1,11 @@
+FROM alpine:latest
+
+RUN apk update && apk add --update --no-cache \
+    # install latest version of python3
+    python3 \
+    # installs pip since it isn't packaged with python
+    py3-pip
+
+RUN pip install ansible
+
+# EXPOSE 80

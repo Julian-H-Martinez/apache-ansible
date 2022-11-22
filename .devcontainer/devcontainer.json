@@ -1,0 +1,32 @@
+{
+    // name for dev container displayed in UI
+    "name": "ansible",
+    "build": {
+        // REQUIRED when using a Dockerfile location of dockerfile is relative to devcontainer.json
+        "dockerfile": "ansible"
+        // context -> String - path Docker build should run from relative to devcontainer.json default="."
+        // args -> Object - name-value pairs containing img build args that should be passed
+        // "args": {
+            
+        // }
+    },
+    // Product (VS Code) specific properties
+    "customizations": {
+        // Product(s)
+        "vscode": {
+            // array [] of extension IDs specifying extensions that should be installed
+            // when container is created
+            "extensions": [
+                "johnpapa.angular2",
+                "ms-python.python",
+                "ms-vscode-remote.remote-ssh",
+                "redhat.ansible",
+                "redhat.vscode-yaml"
+            ]
+        }
+    }
+        
+    
+
+    // "runArgs": ["--env-file",".devcontainer/devcontainer.env"]
+}
