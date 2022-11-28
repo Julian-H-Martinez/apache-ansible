@@ -1,0 +1,10 @@
+---
+
+- name: Creating Docker Repository
+  yum_repository:
+    name: docker
+    description: Docker repo
+    file: /etc/yum.repos.d/docker
+    baseurl: https://download.docker.com/linux/centos/7/x86_64/stable
+    gpgcheck: no
+
