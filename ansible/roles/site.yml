@@ -14,13 +14,9 @@
         mode: preserve
         remote_src: yes
       register: x
-    # - name: "Copying the webpage"
-    #   ansible.builtin.copy:
-    #     src: files/index.html
-    #     dest: /var/www/html/index.html
-    #   register: x
-    # - name: "Starting service"
-    #   ansible.builtin.service:
-    #     name: httpd
-    #     state: started
-    #   when: x.changed
+      
+    - name: "Starting service"
+      ansible.builtin.service:
+        name: httpd
+        state: started
+      when: x.changed
