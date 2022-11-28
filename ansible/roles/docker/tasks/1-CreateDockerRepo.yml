@@ -1,6 +1,6 @@
 ---
 
-- name: Createing Docker Repository
+- name: Creating Docker Repository
   yum_repository:
     name: docker
     description: Docker repo
